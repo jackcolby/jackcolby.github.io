@@ -1,1 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #1f2933;
+}
 
+.hero {
+  background: #0f4c5c;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+.subtitle {
+  color: #d9e6ea;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 20px;
+  background: white;
+  color: #0f4c5c;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+section {
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #0f4c5c;
+  border-bottom: 2px solid #d9e6ea;
+  padding-bottom: 8px;
+}
+
+.project-card {
+  background: white;
+  padding: 28px;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #12343b;
+}
+
+.tags {
+  margin: 18px 0;
+}
+
+.tags span,
+.skill-list span {
+  display: inline-block;
+  background: #e3f2f6;
+  color: #0f4c5c;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  background: #0f4c5c;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #12343b;
+  color: white;
+  margin-top: 50px;
+}
