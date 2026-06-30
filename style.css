@@ -6,142 +6,117 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #f4f6f8;
-  color: #1f2933;
+  color: #111827;
   line-height: 1.6;
 }
 
 nav {
-  width: 100%;
   background: #081f3d;
   color: white;
   padding: 18px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  font-size: 22px;
+  font-weight: 800;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-  margin-left: 24px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: #9bd3f5;
+  margin-left: 26px;
+  font-weight: 700;
 }
 
 .hero {
   background: linear-gradient(135deg, #081f3d, #0f4c5c);
   color: white;
-  padding: 90px 8%;
   text-align: center;
-}
-
-.hero-content {
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 95px 8%;
 }
 
 .eyebrow {
   color: #b9dff5;
-  font-weight: 700;
   text-transform: uppercase;
   font-size: 13px;
-  letter-spacing: 1.5px;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin: 15px 0;
-  line-height: 1.15;
+  font-size: 54px;
+  margin: 10px 0 0;
 }
 
-.hero-text {
-  font-size: 19px;
-  color: #e3edf5;
-  max-width: 750px;
+.hero h2 {
+  font-size: 42px;
+  margin: 5px 0 20px;
+}
+
+.hero p {
+  max-width: 850px;
   margin: 0 auto;
+  font-size: 20px;
+  color: #e5eef5;
 }
 
 .hero-buttons {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .hero-buttons a {
   display: inline-block;
+  margin: 8px;
+  padding: 13px 24px;
   background: white;
   color: #081f3d;
-  padding: 12px 22px;
-  margin: 8px;
+  border-radius: 7px;
   text-decoration: none;
-  border-radius: 6px;
-  font-weight: 700;
-  transition: 0.2s ease;
+  font-weight: 800;
 }
 
 .hero-buttons a:hover {
   background: #9bd3f5;
-  transform: translateY(-2px);
 }
 
 section {
-  max-width: 1050px;
-  margin: 55px auto;
+  max-width: 1080px;
+  margin: 58px auto;
   padding: 0 24px;
 }
 
 h2 {
   color: #081f3d;
-  font-size: 28px;
+  font-size: 30px;
   border-bottom: 3px solid #d7e2ec;
   padding-bottom: 10px;
-  margin-bottom: 25px;
 }
 
-.about p,
-.contact p {
-  font-size: 17px;
+.box,
+.project-card,
+.skill-list {
   background: white;
-  padding: 26px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.08);
 }
 
 .project-card {
-  background: white;
-  border-radius: 14px;
   margin: 30px 0;
-  padding: 34px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  border-left: 6px solid #0f4c5c;
-  transition: 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  border-left: 7px solid #0f4c5c;
 }
 
 .project-card h3 {
-  margin-top: 0;
+  font-size: 25px;
   color: #081f3d;
-  font-size: 24px;
+  margin-top: 0;
 }
 
-.project-card p {
-  font-size: 16px;
-  color: #374151;
+.project-card ul {
+  padding-left: 20px;
 }
 
 .tags {
@@ -157,11 +132,7 @@ h2 {
   margin: 5px;
   border-radius: 20px;
   font-size: 13px;
-  font-weight: 700;
-}
-
-.project-buttons {
-  margin-top: 22px;
+  font-weight: 800;
 }
 
 .project-buttons a {
@@ -170,38 +141,29 @@ h2 {
   color: white;
   padding: 11px 17px;
   margin: 6px 8px 6px 0;
-  text-decoration: none;
   border-radius: 6px;
-  font-weight: 700;
-  font-size: 14px;
-  transition: 0.2s ease;
+  text-decoration: none;
+  font-weight: 800;
 }
 
 .project-buttons a:hover {
   background: #081f3d;
 }
 
-.skill-list {
-  background: white;
-  padding: 26px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-}
-
 .contact a {
   color: #0f4c5c;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 footer {
-  text-align: center;
   background: #081f3d;
   color: white;
+  text-align: center;
   padding: 26px;
   margin-top: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   nav {
     flex-direction: column;
     gap: 12px;
@@ -212,14 +174,10 @@ footer {
   }
 
   .hero h1 {
-    font-size: 34px;
+    font-size: 40px;
   }
 
-  .hero-text {
-    font-size: 16px;
-  }
-
-  .project-card {
-    padding: 24px;
+  .hero h2 {
+    font-size: 30px;
   }
 }
